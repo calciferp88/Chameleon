@@ -1,0 +1,499 @@
+
+ @import url('https://fonts.googleapis.com/css?family=Quicksand:300');
+
+ button,input,a 
+ {
+  outline: none;
+ }
+
+
+/*--------Custom Scroll Bar--------*/
+/* width */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #d0e1e1; 
+}
+ 
+/* Handle */  
+::-webkit-scrollbar-thumb {
+  background: #466d6d; 
+}     
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {  
+  background: #73a5a5; 
+}    
+
+body { 
+   {font-family:"Raleway", sans-serif}
+}
+
+.sidenav {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #141f1f;
+  overflow-x: hidden;
+  padding-top: 20px; 
+  border-right: 1px solid grey;  
+}
+
+.sidenav a {
+  text-decoration: none;    
+  padding: 2%;
+  margin: 7%;       
+  border-radius: 30px;
+  width: 70%;  
+  text-align: center;
+  font-size: 1.5vw;
+  color: white;
+  display: block;  
+  transition: 0.3s;
+}
+
+.btn-nav
+{
+  padding: 5%;
+  margin: 8%;
+  border-radius: 30px;  
+  width: 70%;  
+  border: solid 2px #73a5a5;
+  background-color: inherit;
+  color: white;
+  font-size: 1.3vw;
+}
+
+.sidenav a:hover {
+  background-color: rgba(99, 156, 156,0.8);
+  color: black;
+}
+
+#this
+{
+  background-color: #73a5a5;
+  color: black;
+}
+
+.btn-nav:hover    
+{
+background-color: #73a5a5;
+color: black;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/*--------------Top Nav-------------------*/
+/* Add a black background color to the top navigation */
+
+
+.topnav {
+  display: none;
+  background-color:#141f1f;
+  overflow: hidden;
+  position: fixed;    
+  width: 100%;
+  height: 10%;    
+  border-bottom: 1px solid grey; 
+  z-index: 1;
+  top: 0;
+  border-top: 1px solid grey;
+}  
+
+/* Style the links inside the navigation bar */ 
+.topnav a 
+{
+  float: left;
+  color: white; 
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  width: 20%;
+  height: 100%;
+}
+
+.midsec
+{
+  height: 100%;
+  width: 55%;
+  position: fixed;
+  top: 0;
+  left: 20%;
+  background-color:#a2c3c3;     
+  overflow-x: hidden;
+  padding-top: 20px;
+  border-right: 1px solid grey;
+  overflow-y: auto;
+
+}
+
+.lastsec
+{
+  height: 100%;   
+  width: 25%;
+  position: fixed;
+  top: 0;
+  left: 75%;
+  background-color: #141f1f;
+  overflow-x: hidden;
+  padding-top: 20px;
+}     
+        
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgba(99, 156, 156,0.8);
+  color: black;
+}
+
+/* Add a color to the active/current link */ 
+.topnav a.active {
+  background-color: #4CAF50; 
+  color: white; 
+}
+
+@media screen and (max-width: 600px) 
+ {   
+  .sidenav {display: none;}
+  .topnav  {display: block;} 
+
+  .midsec   
+  { 
+    left: 0%;
+    width: 65%;  
+  }
+
+  .lastsec
+  {  
+    width: 35%;  
+    left: 65%;
+  }
+
+  .feed-nav   
+  {  
+    display: none;
+  }
+
+  .post
+  {
+    padding-top: 50px;   
+
+  }
+
+  .action a
+  {
+    height: 35px;
+  }
+
+}
+/*-----------------------News Feed Section---------------------*/     
+
+.feed-nav   
+{  
+  width: 54.9%;
+  height: 7%;
+  top: 0%;
+  position: fixed;     
+  background-color: #141f1f;  
+  border-bottom:0.8px solid grey;
+}
+
+.feed-nav h2  
+{ 
+  color: white;
+  font-size: 2vw;
+  background-color: inherit;
+  height: 95%;
+  margin-top: 3px;
+  text-align: center;
+} 
+
+/*-----Posts-----*/
+
+.post
+{
+  margin-top: 3%; 
+  border-top: 1px solid grey; 
+  background-color: #283e3e;
+  transition: 0.2s;
+  padding-bottom: 5%;
+  border-radius: 10px;
+} 
+
+.poster
+{
+  color: white;
+  margin: 10px;
+  font-size: 1.5vw;
+}  
+
+.post-date
+{
+  color: #bfbfbf; 
+  padding: 10px;
+  font-size: 1vw;
+}
+    
+.status 
+{
+  color: white;
+  padding: 10px;
+  font-size: 1.5vw;  
+  overflow-y: auto;
+}   
+
+
+.post a
+{
+  width: 33.33%;
+  color: white; 
+  float: left;
+  text-align: center;
+  padding: 14px 16px;     
+  text-decoration: none;
+  font-size: 1.5vw;
+  background-color:#1e2f2f; 
+    border-radius: 5px; 
+    
+}
+  
+  /*.post:hover   
+  { 
+    background-color: #324e4e;
+  }*/  
+
+.post a:hover
+{ 
+  background-color: #466d6d;
+}  
+
+/*------------------------Sign Up---------------------*/
+
+
+@media screen and (max-width: 600px)
+{
+  #left-img     
+  {
+    display: none;
+  }
+
+    .form-container
+    {
+  height: 100%;  
+  width: 100%;   
+  position: static;
+    } 
+}  
+
+#left-img 
+{
+  
+  background-color:#283e3e; 
+  width: 35%; 
+  height: 100%;     
+  position: fixed;  
+}
+
+#left-img p
+{   
+  font-size: 3vw;   
+  color: white;
+  text-align: center; 
+  justify-content: center;  
+  margin-top: 10rem;   
+  font-family: 'Quicksand', sans-serif;  
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;  
+  animation: glow 2s ease-in-out infinite alternate;   
+ 
+}
+
+#left-img p b
+{
+  font-size: 3.5vw;
+  color: white;
+  text-align: center;
+  justify-content: center;  
+  margin-top: 10rem;
+  font-family: 'Quicksand', sans-serif;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;  
+  animation: glow 2s ease-in-out infinite alternate;
+
+}
+
+  @-webkit-keyframes glow {
+     from 
+     {
+      color: #fff;
+    text-shadow: 0 0 10px #c1d7d7, 0 0 15px#c1d7d7, 0 0 20px #c1d7d7, 0 0 25px#c1d7d7, 0 0 30px #c1d7d7, 0 0 35px #c1d7d7, 0 0 40px #c1d7d7, 0 0 45px #c1d7d7;
+     }
+  
+  to 
+      {
+     color: #b1cdcd;
+    text-shadow: 0 0 20px #c1d7d7, 0 0 30px #c1d7d7, 0 0 40px #c1d7d7, 0 0 50px #c1d7d7, 0 0 60px #c1d7d7, 0 0 70px #c1d7d7, 0 0 80px #c1d7d7, 0 1 90px #c1d7d7;
+    }
+}     
+
+    .form-container
+    {
+  height: 100%;
+  width: 65%;
+  position: fixed;
+  top: 0;
+  left: 35%;
+  background-color:#d0e1e1;   
+  overflow-x: hidden;
+    }
+
+       .profile-container
+       {
+          height: 100%;
+  width: 100%;
+       }
+
+.tablink {
+
+  background-color: #283e3e;
+  color: white;
+  outline: none;  
+  cursor: pointer;
+  padding: 14px 16px; 
+  font-size: 1vw;  
+  width: 32.5%;
+  float: left;
+  border:none;
+  height: 7%;
+}
+
+.tablink:hover {
+  background-color: #466d6d;
+  outline: none;
+}
+
+/*----------Login----------*/
+
+*
+{
+    outline:none;
+}
+
+
+
+.form-container input, textarea, select
+{
+  width: 100%;  
+  padding: 15px 30px;  
+  margin: 10px 0;   
+  display: inline-block;    
+  border: 1px solid #ccc;   
+  border-radius: 30px 30px 30px 30px;
+  background-color: #eff5f5;
+  border:none;
+  border:1px solid grey; 
+}
+
+.form-container label
+{
+
+  width: 100%;  
+  padding: 10px 10px;  
+  margin: 10px 0;   
+  display: inline-block;  
+}
+
+
+.form-container input:focus, textarea:focus
+{
+  background-color: #92b9b9;
+  outline:none;
+
+}
+
+.clearfix button
+{
+  width: 15%;
+  padding: 15px;
+  border-radius:30px;
+  border-style: none;
+  background-color: #283e3e;
+  color: white;
+}
+
+hr
+{
+   border: 0.2px solid  grey;
+}
+
+.clearfix button:hover
+{
+    background-color: #3c5d5d;
+}
+
+/*-------------Last Section---------------*/
+
+.post-sec
+{ 
+
+}
+
+
+.post-sec input
+{
+  background-color: inherit;
+  border:none;
+  color: white;
+  font-size: 1vw;
+}
+
+.post-more 
+{
+  background-color: inherit;
+  padding: 30px;
+}
+  
+.post-more a    
+{
+  color: #b1cdcd;
+  padding-right: 30px;
+  font-size: 1.5vw;
+}
+
+.post-more a:hover
+{
+  text-shadow: 0px 0px 3px #c1d7d7;
+}
+
+.post-more button
+{
+  background-color: #b1cdcd;
+  font-size: 1vw;
+  border:none;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1100px)  
+{
+  .post-more a    
+  {
+    padding-right: 10px;
+  }
+
+  .post-sec
+  {
+    margin-top: 50px;
+  }
+}  
